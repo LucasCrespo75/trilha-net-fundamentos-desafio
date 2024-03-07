@@ -2,8 +2,8 @@ namespace DesafioFundamentos.Models
 {
     public class Estacionamento
     {
-        private decimal precoInicial;
-        public decimal precoPorHora;
+        public decimal PrecoInicial { get; set; }
+        public decimal PrecoPorHora { get; set; }
 
         public string Placa { get; set; }
         public int Horas { get; set; }
@@ -17,12 +17,12 @@ namespace DesafioFundamentos.Models
 
         }
 
-        public Estacionamento(int Horas, string Placa, decimal precoInicial, decimal precoPorHora)
+        public Estacionamento(int Horas, string Placa, decimal PrecoInicial, decimal PrecoPorHora)
         {
             this.Horas = Horas;
             this.Placa = Placa;
-            this.precoInicial = precoInicial;
-            this.precoPorHora = precoPorHora;
+            this.PrecoInicial = PrecoInicial;
+            this.PrecoPorHora = PrecoPorHora;
         }
 
         public void AdicionarVeiculo()
@@ -61,7 +61,7 @@ namespace DesafioFundamentos.Models
                     // TODO: Pedir para o usuário digitar a quantidade de horas que o veículo permaneceu estacionado,
                     // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal                
                     // *IMPLEMENTE AQUI*
-                    decimal valorTotal = (precoInicial + precoPorHora) * Horas;
+                    decimal valorTotal = (PrecoInicial + PrecoPorHora) * Horas;
 
                     // TODO: Remover a placa digitada da lista de veículos
                     // *IMPLEMENTE AQUI*
@@ -101,27 +101,7 @@ namespace DesafioFundamentos.Models
             }
 
         }
-        public decimal getPrecoInicial()
-        {
-            return precoInicial;
-        }
 
-
-        public void setPrecoInicial(decimal precoInicial)
-        {
-            this.precoInicial = precoInicial;
-        }
-
-         public decimal getPrecoPorHora()
-        {
-            return precoPorHora;
-        }
-
-
-        public void setPrecoPorHora(decimal precoPorHora)
-        {
-            this.precoPorHora = precoPorHora;
-        }
 
 
     }

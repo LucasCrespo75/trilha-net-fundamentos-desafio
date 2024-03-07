@@ -7,10 +7,10 @@ Estacionamento es = new Estacionamento();
 
 Console.WriteLine("Seja bem vindo ao sistema de estacionamento!\n" +
                   "Digite o preço inicial:");
-es.setPrecoInicial(Convert.ToDecimal(Console.ReadLine()));
+es.PrecoInicial = Convert.ToDecimal(Console.ReadLine());
 
 Console.WriteLine("Agora digite o preço por hora:");
-es.setPrecoPorHora(Convert.ToDecimal(Console.ReadLine()));
+es.PrecoPorHora = Convert.ToDecimal(Console.ReadLine());
 
 // Instancia a classe Estacionamento, já com os valores obtidos anteriormente
 
